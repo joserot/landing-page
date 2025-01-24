@@ -16,7 +16,7 @@ export function BurgerMenu() {
   return (
     <Drawer>
       <DrawerTrigger>
-        <Button asChild className="p-1" variant={"ghost"}>
+        <Button asChild className="p-1 rounded-[4px]" variant={"ghost"}>
           <Image
             priority
             className="w-8 h-8"

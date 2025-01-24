@@ -32,7 +32,7 @@ export function Navbar() {
           />
         </Link>
       ))}
-      <Button>Start Buying</Button>
+      <Button className="rounded-[4px]">Start Buying</Button>
     </nav>
   );
 }
