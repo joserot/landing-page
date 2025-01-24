@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function HeroCard() {
   return (
-    <Card className="w-full max-w-[300px] h-[300px] rounded-md shadow-md overflow-hidden relative">
+    <Card className="w-full max-w-[300px] h-[300px] rounded-md shadow-custom overflow-hidden relative">
       <Image
         src="/image-1.png"
         alt="Card hero image"

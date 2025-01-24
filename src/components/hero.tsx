@@ -4,7 +4,7 @@ import { HeroTitles } from "./hero-titles";
 
 export function Hero() {
   return (
-    <section className="mx-auto w-full max-w-5xl flex justify-center gap-10 items-start py-8">
+    <section className="mx-auto w-11/12 max-w-5xl flex justify-center gap-10 items-start py-8">
       <div className="max-w-2xl flex flex-col gap-5">
         <HeroTitles />
         <HeroStatistics />

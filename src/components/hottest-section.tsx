@@ -41,7 +41,7 @@ const memes = [
 
 export function HottestSection() {
   return (
-    <section className="mx-auto w-full max-w-5xl py-8">
+    <section className="mx-auto w-11/12 max-w-5xl py-8">
       <h2 className="text-4xl font-bold mb-2">Hottest</h2>
       <div className="flex items-center gap-2">
         {memes.map((meme) => {
@@ -55,6 +55,7 @@ export function HottestSection() {
               marketCap={meme.marketCap}
               price={meme.price}
               percentage={meme.percentage}
+              href="/"
             />
           );
         })}
