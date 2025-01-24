@@ -1,4 +1,12 @@
+"use client ";
+
 import { MemeCard } from "./meme-card";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const memes = [
   {
@@ -43,7 +51,7 @@ export function HottestSection() {
   return (
     <section className="mx-auto w-11/12 max-w-5xl py-8">
       <h2 className="text-4xl font-bold mb-2">Hottest</h2>
-      <div className="flex items-center gap-2">
+      <div className="hidden lg:flex items-center gap-2">
         {memes.map((meme) => {
           return (
             <MemeCard
@@ -60,6 +68,34 @@ export function HottestSection() {
           );
         })}
       </div>
+      <Carousel
+        opts={{
+          skipSnaps: true,
+        }}
+        className="lg:hidden h-auto"
+      >
+        <CarouselContent className="flex">
+          {memes.map((meme) => {
+            return (
+              <CarouselItem
+                className="flex-shrink-0 flex-grow-0 basis-auto min-w-0"
+                key={meme.name}
+              >
+                <MemeCard
+                  name={meme.name}
+                  image={meme.image}
+                  isPositive={meme.isPositive}
+                  isVerified={meme.isVerified}
+                  marketCap={meme.marketCap}
+                  price={meme.price}
+                  percentage={meme.percentage}
+                  href="/"
+                />
+              </CarouselItem>
+            );
+          })}
+        </CarouselContent>
+      </Carousel>
     </section>
   );
 }

@@ -25,8 +25,8 @@ export function MemeCard({
   href,
 }: Props) {
   return (
-    <Link href={href}>
-      <Card className="w-full max-w-[300px] h-[300px] rounded-md shadow-custom overflow-hidden">
+    <Link className="w-auto max-w-[300px] block" href={href}>
+      <Card className="w-full max-w-[300px] h-[350px] lg:h-[300px] rounded-md shadow-custom overflow-hidden">
         <Image src={image} alt="Card hero image" width={400} height={400} />
         <CardContent className="flex justify-between items-start p-4">
           <div className="flex flex-col gap-2">
@@ -53,7 +53,11 @@ export function MemeCard({
                 isPositive ? "text-[#2AC02F]" : "text-[#E73A3A]"
               }  font-semibold text-base`}
             >
-              {percentage ? percentage : <span className="text-white">--</span>}
+              {percentage ? (
+                percentage
+              ) : (
+                <span className="text-white opacity-0">--</span>
+              )}
             </span>
             <div className="flex flex-col">
               <span className="text-[#545454] text-sm">Market Cap</span>

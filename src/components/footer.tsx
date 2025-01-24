@@ -39,7 +39,7 @@ const icons = [
 export function Footer() {
   return (
     <footer className="mx-auto w-11/12 max-w-5xl flex flex-col justify-center gap-10 items-center py-20">
-      <div className="flex gap-5">
+      <div className="flex justify-center items-center flex-wrap gap-8">
         {links.map((link) => {
           return (
             <Link
@@ -52,7 +52,7 @@ export function Footer() {
           );
         })}
       </div>
-      <div className="flex gap-5">
+      <div className="flex justify-center items-center flex-wrap gap-8">
         {icons.map((icon) => {
           return (
             <Link
@@ -71,7 +71,7 @@ export function Footer() {
           );
         })}
       </div>
-      <p className="text-muted-foreground text-sm">
+      <p className="text-muted-foreground text-sm text-center text-balance">
         © 2024 Your Company, Inc. All rights reserved.
       </p>
     </footer>

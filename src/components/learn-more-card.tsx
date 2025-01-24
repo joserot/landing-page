@@ -9,7 +9,7 @@ interface Props {
 export function LearnMoreCard({ href, text }: Props) {
   return (
     <Link
-      className="w-full relative h-20 rounded-md overflow-hidden flex justify-center items-center group shadow-custom"
+      className="w-full min-w-[280px] md:min-w-0 relative h-20 rounded-md overflow-hidden flex justify-center items-center group shadow-custom"
       href={href}
     >
       <Image
