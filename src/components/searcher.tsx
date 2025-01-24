@@ -14,7 +14,7 @@ export function Searcher() {
       <Input
         type="search"
         placeholder="Search ai agents..."
-        className="w-full border-0"
+        className="w-full border-0 bg-gray-50"
       />
       <Image
         src={"/keyboard.svg"}

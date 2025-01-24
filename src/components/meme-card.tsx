@@ -26,7 +26,7 @@ export function MemeCard({
 }: Props) {
   return (
     <Link className="w-auto max-w-[300px] block" href={href}>
-      <Card className="w-full max-w-[300px] h-[350px] lg:h-[300px] rounded-md shadow-custom overflow-hidden">
+      <Card className="w-full max-w-[300px] h-[350px] lg:h-[300px] rounded-lg shadow-custom overflow-hidden">
         <Image src={image} alt="Card hero image" width={400} height={400} />
         <CardContent className="flex justify-between items-start p-4">
           <div className="flex flex-col gap-2">

@@ -10,7 +10,7 @@ const users = [
 export function HeroStatistics() {
   return (
     <article className="hidden md:flex items-center gap-2">
-      <Card className="bg-[#F5F5F5] p-4 rounded-md flex flex-col gap-2 w-1/2 border-none">
+      <Card className="bg-[#F5F5F5] p-4 rounded-lg flex flex-col gap-2 w-1/2 border-none">
         <span className="text-sm flex items-center gap-2">
           <span className="block w-2 h-2 rounded-full bg-[#22C55E] text-sm"></span>
           Total users
@@ -33,7 +33,7 @@ export function HeroStatistics() {
           <span className="text-2xl">52,630</span>
         </div>
       </Card>
-      <Card className="bg-[#F5F5F5] p-4 rounded-md flex flex-col gap-2 w-1/2 border-none">
+      <Card className="bg-[#F5F5F5] p-4 rounded-lg flex flex-col gap-2 w-1/2 border-none">
         <span className="text-sm flex items-center gap-2">
           <span className="block w-2 h-2 rounded-full bg-[#22C55E] text-sm"></span>
           Trade volume

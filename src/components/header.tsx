@@ -6,7 +6,7 @@ import { BurgerMenu } from "./burger-menu";
 
 export function Header() {
   return (
-    <header className="w-11/12 flex justify-center items-center py-3 md:py-4 mx-auto">
+    <header className="w-11/12 flex justify-center items-center py-4 mx-auto">
       <div className="flex justify-between items-center w-full max-w-7xl">
         <div className="block md:hidden">
           <BurgerMenu />
